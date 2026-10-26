@@ -1,0 +1,39 @@
+<section class="page-heading">
+  <p class="eyebrow">PEMBAYARAN</p>
+  <h1>Catat Pembayaran</h1>
+  <p>Isi data transaksi sesuai informasi pesananmu.</p>
+</section>
+<section class="content-layout">
+  <div class="panel">
+    <h2>Form pembayaran</h2>
+    <form id="payment-form" novalidate>
+      <div class="form-group">
+        <label for="id-pesanan">ID Pesanan</label>
+        <input id="id-pesanan" name="id_pesanan" maxlength="20" placeholder="Contoh: KK-1001" required>
+        <small class="error" id="id-pesanan-error"></small>
+      </div>
+      <div class="form-group">
+        <label for="metode">Metode pembayaran</label>
+        <select id="metode" name="metode_pembayaran" required>
+          <option value="">Pilih metode pembayaran</option>
+          <option value="tunai">Tunai di kantin</option>
+          <option value="transfer">Transfer bank (simulasi)</option>
+          <option value="qris">QRIS (simulasi)</option>
+        </select>
+        <small class="error" id="metode-error"></small>
+      </div>
+      <div class="form-group">
+        <label for="nominal">Total pembayaran (Rp)</label>
+        <input id="nominal" name="total_pembayaran" type="number" min="1" step="1" placeholder="Contoh: 15000" required>
+        <small class="error" id="nominal-error"></small>
+      </div>
+      <button class="button" type="submit">Kirim data pembayaran →</button>
+      <p id="payment-message" class="notice" role="status" hidden></p>
+    </form>
+  </div>
+  <aside class="panel">
+    <h2>Sebelum mengirim</h2>
+    <p class="muted">Pastikan ID pesanan dan total pembayaran benar. Form ini akan memvalidasi input sebelum mengirim ke endpoint PHP.</p>
+    <p class="notice">Ini prototipe pembelajaran. Transfer bank dan QRIS tidak memproses uang sungguhan.</p>
+  </aside>
+</section>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KantinKita | Status Pesanan & Pembayaran</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="#beranda" aria-label="KantinKita Beranda">Kantin<span>Kita</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#beranda">Beranda</a>
+        <a href="#riwayat">Riwayat Pesanan</a>
+        <a href="#pembayaran">Pembayaran</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PESAN MAKANAN • PANTAU DENGAN MUDAH</p>
+        <h1>Pesananmu, selalu <span>terpantau.</span></h1>
+        <p class="hero-description">Periksa perkembangan pesanan dan informasi pembayaran KantinKita dalam satu tempat.</p>
+        <div class="hero-actions">
+          <a class="button" href="#riwayat">Lihat pesanan <span aria-hidden="true">→</span></a>
+          <a class="button button-light" href="#pembayaran">Cek pembayaran</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="plate">🍱</div><div class="floating-card card-one">✓ Pesanan tercatat</div>
+        <div class="floating-card card-two">🕒 Pantau status</div>
+      </div>
+    </section>
+
+    <section class="section-heading">
+      <div><p class="eyebrow">LAYANAN KAMU</p><h2>Semua informasi pesanan</h2></div>
+      <p class="muted">Pilih fitur yang ingin kamu buka.</p>
+    </section>
+    <section class="feature-grid">
+      <article class="feature-card">
+        <div class="feature-icon green">⌁</div><h3>Status Pesanan</h3>
+        <p>Lihat tahapan pesanan mulai dari menunggu hingga selesai.</p>
+        <a href="#riwayat">Lacak pesanan <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon yellow">▤</div><h3>Riwayat Transaksi</h3>
+        <p>Periksa nomor pesanan, tanggal, total, dan status transaksi.</p>
+        <a href="#riwayat">Buka riwayat <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon pink">↗</div><h3>Pembayaran</h3>
+        <p>Catat metode pembayaran dan lihat status konfirmasinya.</p>
+        <a href="#pembayaran">Isi pembayaran <span aria-hidden="true">→</span></a>
+      </article>
+    </section>
+
+    <section class="info-banner">
+      <div><p class="eyebrow">KANTINKITA</p><h2>Lebih praktis, lebih teratur.</h2>
+      <p>Website pemesanan makanan untuk membantu warga kampus memantau pesanan tanpa harus terus mengantre.</p></div>
+      <div class="info-emoji" aria-hidden="true">🥗</div>
+    </section>
+  </main>
+
+  <footer><p>© 2026 KantinKita · Proyek UTS Pemrograman Web</p><p class="footer-note">Pembayaran pada prototipe ini adalah simulasi.</p></footer>
+  <template id="home-template">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PESAN MAKANAN • PANTAU DENGAN MUDAH</p>
+        <h1>Pesananmu, selalu <span>terpantau.</span></h1>
+        <p class="hero-description">Periksa perkembangan pesanan dan informasi pembayaran KantinKita dalam satu tempat.</p>
+        <div class="hero-actions"><a class="button" href="#riwayat">Lihat pesanan →</a><a class="button button-light" href="#pembayaran">Cek pembayaran</a></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="plate">🍱</div><div class="floating-card card-one">✓ Pesanan tercatat</div><div class="floating-card card-two">🕒 Pantau status</div></div>
+    </section>
+    <section class="section-heading"><div><p class="eyebrow">LAYANAN KAMU</p><h2>Semua informasi pesanan</h2></div><p class="muted">Pilih fitur yang ingin kamu buka.</p></section>
+    <section class="feature-grid">
+      <article class="feature-card"><div class="feature-icon green">⌁</div><h3>Status Pesanan</h3><p>Lihat tahapan pesanan mulai dari menunggu hingga selesai.</p><a href="#riwayat">Lacak pesanan →</a></article>
+      <article class="feature-card"><div class="feature-icon yellow">▤</div><h3>Riwayat Transaksi</h3><p>Periksa nomor pesanan, tanggal, total, dan status transaksi.</p><a href="#riwayat">Buka riwayat →</a></article>
+      <article class="feature-card"><div class="feature-icon pink">↗</div><h3>Pembayaran</h3><p>Catat metode pembayaran dan lihat status konfirmasinya.</p><a href="#pembayaran">Isi pembayaran →</a></article>
+    </section>
+    <section class="info-banner"><div><p class="eyebrow">KANTINKITA</p><h2>Lebih praktis, lebih teratur.</h2><p>Website pemesanan makanan untuk membantu warga kampus memantau pesanan tanpa harus terus mengantre.</p></div><div class="info-emoji" aria-hidden="true">🥗</div></section>
+  </template>
+  <script src="script.js"></script>
+</body>
+</html>

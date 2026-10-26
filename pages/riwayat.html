@@ -1,0 +1,24 @@
+<section class="page-heading">
+  <p class="eyebrow">PESANAN KAMU</p>
+  <h1>Riwayat & Status Pesanan</h1>
+  <p>Temukan pesanan dan periksa perkembangannya.</p>
+</section>
+<section class="content-layout">
+  <div class="panel">
+    <div class="toolbar">
+      <div class="form-group"><label for="search-order">Cari nomor pesanan</label><input id="search-order" type="search" placeholder="Contoh: KK-1001"></div>
+      <div class="form-group"><label for="filter-status">Status pesanan</label><select id="filter-status"><option value="">Semua status</option><option>Menunggu</option><option>Sedang Diproses</option><option>Siap Diambil</option><option>Selesai</option><option>Dibatalkan</option></select></div>
+    </div>
+    <div id="order-list" aria-live="polite"><p class="muted">Memuat data pesanan...</p></div>
+  </div>
+  <aside class="panel">
+    <h2>Alur status pesanan</h2>
+    <ol class="step-list">
+      <li><strong>1. Menunggu</strong><span>Pesanan sudah tercatat.</span></li>
+      <li><strong>2. Sedang Diproses</strong><span>Kantin menyiapkan pesanan.</span></li>
+      <li><strong>3. Siap Diambil</strong><span>Pesanan siap diambil.</span></li>
+      <li><strong>4. Selesai</strong><span>Pesanan telah diselesaikan.</span></li>
+    </ol>
+    <p class="notice">Data yang tampil mengikuti data server jika PHP dan database sudah disiapkan.</p>
+  </aside>
+</section>
